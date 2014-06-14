@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035FC9A9194B81D200753772 /* IBCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035FC9A8194B81D200753772 /* IBCDetailViewController.m */; };
 		03698B89194B505A00CE6E8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03698B88194B505A00CE6E8F /* Foundation.framework */; };
 		03698B8B194B505A00CE6E8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03698B8A194B505A00CE6E8F /* CoreGraphics.framework */; };
 		03698B8D194B505A00CE6E8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03698B8C194B505A00CE6E8F /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		035FC9A7194B81D200753772 /* IBCDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBCDetailViewController.h; sourceTree = "<group>"; };
+		035FC9A8194B81D200753772 /* IBCDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBCDetailViewController.m; sourceTree = "<group>"; };
 		03698B85194B505A00CE6E8F /* BooksAndMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooksAndMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03698B88194B505A00CE6E8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		03698B8A194B505A00CE6E8F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,14 +117,16 @@
 		03698B8E194B505A00CE6E8F /* BooksAndMovies */ = {
 			isa = PBXGroup;
 			children = (
+				03698BA3194B505A00CE6E8F /* Images.xcassets */,
+				03698B8F194B505A00CE6E8F /* Supporting Files */,
 				03698B97194B505A00CE6E8F /* IBCAppDelegate.h */,
 				03698B98194B505A00CE6E8F /* IBCAppDelegate.m */,
 				03698B9A194B505A00CE6E8F /* Main_iPhone.storyboard */,
 				03698B9D194B505A00CE6E8F /* Main_iPad.storyboard */,
 				03698BA0194B505A00CE6E8F /* IBCViewController.h */,
 				03698BA1194B505A00CE6E8F /* IBCViewController.m */,
-				03698BA3194B505A00CE6E8F /* Images.xcassets */,
-				03698B8F194B505A00CE6E8F /* Supporting Files */,
+				035FC9A7194B81D200753772 /* IBCDetailViewController.h */,
+				035FC9A8194B81D200753772 /* IBCDetailViewController.m */,
 			);
 			path = BooksAndMovies;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				035FC9A9194B81D200753772 /* IBCDetailViewController.m in Sources */,
 				03698B95194B505A00CE6E8F /* main.m in Sources */,
 				03698BA2194B505A00CE6E8F /* IBCViewController.m in Sources */,
 				03698B99194B505A00CE6E8F /* IBCAppDelegate.m in Sources */,
@@ -394,7 +400,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BooksAndMovies/BooksAndMovies-Prefix.pch";
 				INFOPLIST_FILE = "BooksAndMovies/BooksAndMovies-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -407,7 +415,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BooksAndMovies/BooksAndMovies-Prefix.pch";
 				INFOPLIST_FILE = "BooksAndMovies/BooksAndMovies-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +481,7 @@
 				03698BBC194B505B00CE6E8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03698BBD194B505B00CE6E8F /* Build configuration list for PBXNativeTarget "BooksAndMoviesTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +490,7 @@
 				03698BBF194B505B00CE6E8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

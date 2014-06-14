@@ -1,5 +1,5 @@
 //
-//  IBCViewController.h
+//  IBCDetailViewController.h
 //  BooksAndMovies
 //
 //  Created by Josh Brown on 6/13/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IBCViewController : UITableViewController
+@interface IBCDetailViewController : UIViewController
+
+@property NSDictionary *entry;
 
 @end
